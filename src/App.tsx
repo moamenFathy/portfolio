@@ -69,15 +69,6 @@ function App() {
     },
   ];
 
-  const homeVariants = {
-    // hidden: { opacity: 0, width: 0 },
-    // visible: {
-    //   opacity: 1,
-    //   width: "100%",
-    //   transition: { duration: 1.5 },
-    // },
-  };
-
   const bounceVariant = {
     hidden: { opacity: 0 },
     visible: {
@@ -107,14 +98,7 @@ function App() {
       </div>
       {/* navigation */}
       {/* welcome menu */}
-      <motion.div
-        className="home overflow-y-hidden"
-        id="Home"
-        variants={homeVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
+      <motion.div className="home overflow-y-hidden" id="Home">
         <motion.div
           className="flex flex-col gap-3"
           initial={{ opacity: 0 }}

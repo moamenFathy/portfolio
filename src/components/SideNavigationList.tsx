@@ -7,7 +7,7 @@ import { FaHome } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 
-const SideNavigationList = () => {
+function SideNavigationList() {
   const sections = [
     { sectionName: "Home", icon: <FaHome /> },
     { sectionName: "About", icon: <PiReadCvLogoFill /> },
@@ -22,7 +22,7 @@ const SideNavigationList = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.4,
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -76,6 +76,6 @@ const SideNavigationList = () => {
       </ul>
     </motion.nav>
   );
-};
+}
 
 export default SideNavigationList;
