@@ -27,9 +27,6 @@ function App() {
     { text: "Ideal", icon: <IoPeopleCircleOutline /> },
   ];
 
-  const fileUrl = "../public/MoamenFathy.pdf";
-  const fileName = "Moamen's CV";
-
   const links = [
     {
       id: 0,
@@ -280,7 +277,10 @@ function App() {
             viewport={{ once: true }}
           >
             <Button>
-              <a href={fileUrl} download={fileName}>
+              <a
+                href="../portfolio/MoamenFathy.pdf"
+                download="Moamen Fathy.pdf"
+              >
                 Download CV
               </a>
             </Button>

@@ -1,7 +1,6 @@
 import { GiSkills } from "react-icons/gi";
 import { GrProjects } from "react-icons/gr";
 import { RiLinksLine } from "react-icons/ri";
-import { ModeToggle } from "./mode-toggle";
 import { PiReadCvLogoFill } from "react-icons/pi";
 import { FaHome } from "react-icons/fa";
 import { useEffect, useState } from "react";
@@ -49,7 +48,7 @@ function SideNavigationList() {
 
   return (
     <motion.nav
-      className="fixed top-52 right-3 z-50 bg-red-400 w-fit rounded-4xl "
+      className="fixed top-52 right-3 z-50 bg-blue-500 w-fit rounded-4xl hidden lg:block"
       initial={{ opacity: 0, x: 100 }}
       animate={{
         opacity: 1,
@@ -70,9 +69,6 @@ function SideNavigationList() {
             <a href={`#${section.sectionName}`}>{section.icon}</a>
           </li>
         ))}
-        <li className="m-2 mb-4 text-3xl P-2 rounded-4xl cursor-pointer">
-          <ModeToggle />
-        </li>
       </ul>
     </motion.nav>
   );
