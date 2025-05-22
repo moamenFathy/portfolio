@@ -27,7 +27,7 @@ function App() {
     { text: "Ideal", icon: <IoPeopleCircleOutline /> },
   ];
 
-  const fileUrl = "../public/Moamen Fathy.pdf";
+  const fileUrl = "../public/MoamenFathy.pdf";
   const fileName = "Moamen's CV";
 
   const links = [
