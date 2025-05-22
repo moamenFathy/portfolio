@@ -16,6 +16,9 @@ import { FaGithub } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import me from "./assets/me.png";
+import me2 from "./assets/me2.jpeg";
+import project from "./assets/project.jpeg";
 
 function App() {
   const icons = [
@@ -113,12 +116,7 @@ function App() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <img
-              style={{ borderRadius: "100%" }}
-              src="../public/WhatsApp Image 2025-05-02 at 12.03.02 PM.png"
-              alt=""
-              width={300}
-            />
+            <img style={{ borderRadius: "100%" }} src={me} alt="" width={300} />
           </motion.div>
           <div className="text-center">
             <motion.h1
@@ -196,12 +194,7 @@ function App() {
           }}
           viewport={{ once: true }}
         >
-          <img
-            src="../public/WhatsApp Image 2025-05-02 at 5.31.11 PM.jpeg"
-            alt=""
-            width={700}
-            className="rounded-4xl"
-          />
+          <img src={me2} alt="" width={700} className="rounded-4xl" />
         </motion.div>
         {/* img */}
         {/* text */}
@@ -350,7 +343,7 @@ function App() {
         >
           <img
             className="rounded-4xl border-1 border-dashed border-red-500 p-3"
-            src="../public/WhatsApp Image 2025-05-09 at 3.37.14 PM.jpeg"
+            src={project}
             alt=""
             width={400}
           />
